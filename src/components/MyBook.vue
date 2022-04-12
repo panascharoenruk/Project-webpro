@@ -26,11 +26,8 @@
                     
                   </div>
                 </div>
-           
-       
-        
               </div>
-         <footer class="card-footer">
+                 <footer class="card-footer">
                     <a class="card-footer-item">อ่าน</a>
                 </footer>
             </div>

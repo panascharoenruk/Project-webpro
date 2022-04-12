@@ -81,7 +81,6 @@
                   <button
                     class="button"
                     style="color: #eee2dc; background-color: #ac3b61"
-                    @click="submit()"
                   >
                     เข้าสู่ระบบ
                   </button>
@@ -108,11 +107,6 @@ export default {
       Password: "",
       picked: "Customer",
     };
-  },
-  methods: {
-    submit() {
-      //ตรงนี้เช็คข้อมูล ว่าถูกต้องไหม
-    },
   },
 };
 </script>

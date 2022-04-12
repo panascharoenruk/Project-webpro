@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar"
+    class="navbar is-fixed-top"
     style="background: linear-gradient(221deg, #edc7b7, #eee2dc 73%)"
   >
     <div class="navbar-menu mt-1 mb-1">
@@ -13,6 +13,10 @@
             <a class="ml-2 mr-1" style="color: #ac3b61">/</a>
             <router-link to="/login" style="color: #ac3b61">
               ล็อคอินเข้าสู่ระบบ</router-link
+            >
+            <a class="ml-2 mr-1" style="color: #ac3b61">/</a>
+            <router-link to="/Profile_user" style="color: #ac3b61"
+              >โปรไฟล์</router-link
             >
           </a>
         </div>
@@ -31,7 +35,7 @@
               class="button"
               style="background: linear-gradient(221deg, #edc7b7, #eee2dc 73%)"
             >
-              <span style="color: #ac3b61">ตะกร้า</span>
+              <span style="color: #ac3b61">2</span>
               <span class="icon is-size-5 ml-2"
                 ><i class="fas fa-shopping-cart" style="color: #ac3b61"> </i
               ></span>
@@ -41,11 +45,13 @@
       </div>
     </div>
   </nav>
+  <br />
+  <br />
 </template>
 <script>
 export default {
   name: "NavBar",
 };
 </script>
-<style lang="">
+<style >
 </style>

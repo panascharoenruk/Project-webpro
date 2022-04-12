@@ -1,5 +1,6 @@
 <template >
   <NavBar />
+  <EditProfile />
   <section>
     <div class="columns">
       <div class="container profile">
@@ -58,15 +59,15 @@
             <ul>
               <li
                 class="link"
-                v-bind:class="{ 'is-active': isActive == 'pictures' }"
+                v-bind:class="{ 'is-active': isActive == 'MYbook' }"
               >
-                <a v-on:click="isActive = 'pictures'">
+                <a v-on:click="isActive = 'MYbook'">
                   <span class="icon"> <i class="fa fa-list"></i> </span
                   >ชั้นหนังสือ</a
                 >
               </li>
-              <li v-bind:class="{ 'is-active': isActive == 'music' }">
-                <a v-on:click="isActive = 'music'"
+              <li v-bind:class="{ 'is-active': isActive == 'MYbooksell' }">
+                <a v-on:click="isActive = 'MYbooksell'"
                   >หนังสือที่ลงขาย/เขียนหนังสือ</a
                 >
               </li>
@@ -76,16 +77,18 @@
         <div class="tab-contents">
           <div
             class="content mt-6 mb-6"
-            v-bind:class="{ 'is-active': isActive == 'pictures' }"
+            v-bind:class="{ 'is-active': isActive == 'MYbook' }"
           >
             <MyBook />
           </div>
         </div>
         <div class="tab-contents">
+          <br />
           <div
             class="content mt-6 mb-6"
-            v-bind:class="{ 'is-active': isActive == 'music' }"
+            v-bind:class="{ 'is-active': isActive == 'MYbooksell' }"
           >
+            <AddBookmain />
             <MysellBook />
           </div>
         </div>
@@ -97,6 +100,8 @@
 import MyBook from "@/components/MyBook";
 import MysellBook from "@/components/MysellBook";
 import NavBar from "@/components/NavBar";
+import AddBookmain from "@/components/AddBookmain";
+import EditProfile from "@/components/EditProfile";
 
 export default {
   name: "Profile_Customer",
@@ -104,6 +109,8 @@ export default {
     NavBar,
     MyBook,
     MysellBook,
+    AddBookmain,
+    EditProfile,
   },
   data() {
     return {
@@ -120,7 +127,7 @@ export default {
           BankNumber: "495-45613",
         },
       ],
-      isActive: "pictures",
+      isActive: "MYbook",
     };
   },
 };

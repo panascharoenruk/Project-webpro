@@ -1,6 +1,7 @@
 <template>
   <NavBar />
   <MyCarosel />
+
   <div class="columns">
     <div class="column mt-4">
       <section class="section">
