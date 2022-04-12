@@ -1,13 +1,11 @@
 <template >
   <div class="mt-6">
-    <Carousel :items-to-show="2" :autoplay="3000" :wrap-around="true">
+    <Carousel :items-to-show="1.95" :autoplay="3500" :wrap-around="true">
       <Slide v-for="slide in slides" :key="slide">
         <div class="carousel__item">
-          <img
-            :src="slide"
-            alt="Placeholder image"
-            style="width: 750px;"
-          />
+          <router-link to="/DetailPromotion">
+            <img :src="slide" alt="Placeholder image" style="width: 750px" />
+          </router-link>
         </div>
       </Slide>
 

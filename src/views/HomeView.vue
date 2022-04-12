@@ -10,11 +10,11 @@
           </span>
 
           <div class="field has-addons is-pulled-right">Tag</div>
+          <div class="divider is-info" style="color: #123c69">Latest Book</div>
         </h1>
       </section>
 
       <div class="container is-max-desktop">
-        <div class="divider is-info" style="color: #123c69">Latest Book</div>
         <div class="is-multiline columns is-variable is-2">
           <div
             class="column is-one-quarter"
@@ -22,7 +22,7 @@
             :key="value.id"
           >
             <div class="card">
-              <router-link to="/DetailsBook" style="color: #ac3b61">
+              <router-link to="/DetailsBook">
                 <div class="card-image">
                   <figure class="image is-1by1">
                     <img :src="value.image" alt="Placeholder image" />
@@ -63,7 +63,9 @@
                   @click="cardpush(index)"
                 >
                   <i
-                    class="fas fa-shopping-cart has-text-warning is-size-4"
+                    class="fa fa-cart-plus is-size-4"
+                    style="color: #edc7b7"
+                    aria-hidden="true"
                   ></i>
                 </button>
               </div>
@@ -146,7 +148,7 @@ export default defineComponent({
           is_favorite: true,
           Book_type: ["comedy", "Romance"],
           image:
-            "https://images.unsplash.com/photo-1601593346740-925612772716?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+            "https://cdna.artstation.com/p/assets/images/images/041/717/352/large/u-o-s-a-91946356-p0.jpg?1632486134",
           detail_book: "บลาๆ",
         },
         {

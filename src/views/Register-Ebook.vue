@@ -8,10 +8,7 @@
           <div class="column is-half">
             <div
               class="card column mt-6"
-              style="
-                background: linear-gradient(221deg, #edc7b7, #eee2dc 73%);
-                width: 700px;
-              "
+              style="background: linear-gradient(221deg, #edc7b7, #eee2dc 73%)"
             >
               <div class="field">
                 <p

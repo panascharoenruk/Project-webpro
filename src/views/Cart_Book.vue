@@ -2,66 +2,55 @@
   <NavBar />
   <div class="hero-body hero is-fullheight">
     <div class="container has-text-centered">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <p class="is-size-3">หนังสือ ที่หยิบมา</p>
+      <div class="column">
+        <p class="is-size-3" style="color: #ac3b61">
+          <i class="fa fa-book" aria-hidden="true"> </i> &nbsp;รายชื่อหนังสือใน
+          ตะกร้า
+        </p>
+        <br />
+        <div class="divider is-info" style="color: #123c69">
+          Books in the cart
         </div>
       </div>
-      <div class="box">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-64x64">
-              <img
-                src="https://bulma.io/images/placeholders/128x128.png"
-                alt="Image"
-              />
-            </figure>
-          </div>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>John Smith</strong> <small>@johnsmith</small>
-                <small>31m</small>
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                efficitur sit amet massa fringilla egestas. Nullam condimentum
-                luctus turpis.
-              </p>
-            </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" aria-label="reply">
-                  <span class="icon is-small">
-                    <i class="fas fa-reply" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="retweet">
-                  <span class="icon is-small">
-                    <i class="fas fa-retweet" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="like">
-                  <span class="icon is-small">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </article>
+      <CartItem />
+
+      <div class="divider is-info is-size-6" style="color: #123c69">
+        <router-link to="/" style="color: #123c69"
+          >กลับไปเลือกซื้อหนังสือเพิ่ม</router-link
+        >
+      </div>
+    </div>
+    <div class="container hero-body">
+      <div class="columns is-multiline box">
+        <div class="column is-12">
+          <h1 class="title has-text-centered section-title is-size-4">
+            ยอดชำระเงิน : 600 บาท
+          </h1>
+        </div>
+        <div class="column is-10 has-text-centered is-offset-1">
+          <h2 class="subtitle">จำนวนหนังสือซื้อที่ซื้อ : 2 เล่ม</h2>
+          <button class="button">
+            ยืนยันการชำระเงิน&emsp;<i
+              class="fa fa-check"
+              aria-hidden="true"
+            ></i>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import NavBar from "@/components/NavBar";
-
+import CartItem from "@/components/CartItem";
 export default {
   name: "Cart_Book",
   components: {
     NavBar,
+    CartItem,
   },
 };
 </script>
-<style lang="">
+<style >
+@import "~@creativebulma/bulma-divider";
 </style>

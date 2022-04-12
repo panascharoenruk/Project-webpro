@@ -5,6 +5,7 @@ import LogIn from '../views/Login-Ebook.vue'
 import Profile_user from '../views/Profile_user.vue'
 import DetailsBook from '../views/DetailsBook.vue'
 import Cart_Book from '../views/Cart_Book.vue'
+import DetailPromotion from '../views/DetailPromotion.vue'
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/Cart_Book',
     name: 'Cart_Book',
     component: Cart_Book
+  },
+  {
+    path: '/DetailPromotion',
+    name: 'DetailPromotion',
+    component: DetailPromotion
   }
 
 ]
