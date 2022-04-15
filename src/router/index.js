@@ -6,6 +6,7 @@ import Profile_user from '../views/Profile_user.vue'
 import DetailsBook from '../views/DetailsBook.vue'
 import Cart_Book from '../views/Cart_Book.vue'
 import DetailPromotion from '../views/DetailPromotion.vue'
+import AdminPage from '../views/AdminPage.vue'
 
 const routes = [
   {
@@ -44,7 +45,12 @@ const routes = [
     name: 'DetailPromotion',
     component: DetailPromotion
   }
-
+  ,
+  {
+    path: '/AdminPage',
+    name: 'AdminPage',
+    component: AdminPage
+  }
 ]
 
 const router = createRouter({

@@ -24,6 +24,9 @@
 
       <div class="navbar-canter">
         <div class="navbar-item mt-2" style="margin-right: 120px">
+          <span class="icon is-size-5 mr-2"
+            ><i class="fas fa fa-home" style="color: #ac3b61"></i>
+          </span>
           <router-link to="/" style="color: #ac3b61">E5-book</router-link>
         </div>
       </div>
